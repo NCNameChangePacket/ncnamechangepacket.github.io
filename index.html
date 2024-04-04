@@ -2,6 +2,12 @@
 <head>
     <title>NC Name Change Packet</title>
     <link rel="icon" type="image/x-icon" href="./files/images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/buttons.js"></script>  
+    
+
 </head>
 <body>
     <header class="trans-border"\>
@@ -12,279 +18,29 @@
                 </h1>
             <nav>
                 
-                <div class="nav-item" onclick="openPage('Intro')">
+                <div id="intro-button" class="nav-item" onclick="openPage('intro')">
                     <h5>Intro</h5>
                 </div>
-                <div class="nav-item" onclick="openPage('BackgroundChecks')">
+                <div id="bg-checks-button" class="nav-item">
                     <h5>Background Checks</h5>
                 </div>
-                <div class="nav-item" onclick="openPage('CourtDocuments')">
+                <div id="court-docs-button" class="nav-item">
                     <h5>Court Documents</h5>
                 </div>
-                <div class="nav-item" onclick="openPage('IDDocuments')">
+                <div id="id-docs-button" class="nav-item">
                     <h5>ID Documents</h5>
                 </div>
             </nav>
         </div>
         
         
-        <section class="content">
-
-            
-            
-            <section id="Intro">
-                <h2>
-                    Intro
-                </h2>
-                <p>
-                    Hello. Welcome to my NC Name Change Packet.
-                    This was something I wish I had going through this process.
-                    Hopefully it will save you some of the struggling 
-                    I needed to go through to find all these forms.
-                    <br><br>
-                    For context, I went through this process while legally transitioning
-                    as an adult (the process is different for people under 18) and living in Wake county. 
-                    I am not a lawyer, and so I cannot give legal advice (although here are the 
-                    general statutes on name changes, 
-                    <a href="https://www.ncleg.net/enactedlegislation/statutes/html/bychapter/chapter_101.html" target="_blank" rel="noopener noreferrer">
-                        G.S. 101</a>, if you are interested). That said, I am
-                        somebody who had to stumble through this complicated process.
-                        My hope is that this guide will help make this process (slightly) less complicated for you.
-                </p>
-            </section>
-
-            <section id="BackgroundChecks" style="display:none">
-                <h2>
-                    Background Checks
-                </h2>
-                <p>
-                    For a name change, you will need to get a state and a federal background check,
-                    and you will need to get fingerprinted for each.
-                </p>
-                <br>
-                <h4><a href="https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/identity-history-summary-checks#Online" target="_blank" rel="noopener noreferrer">
-                    National Identity History Summary
-                </a></h4>
-                <p>
-                    This is your federal background check. It is fastest to complete it on line.
-                    After submitting your request, you will get instuction for how to submit you fingerprints for this background check.
-                </p>
-                <h4><a href="https://ips.usps.com/IdentityCapture/" target="_blank" rel="noopener noreferrer">
-                    Fingerprinting - Federal
-                </a></h4>
-                <p>
-                    Fingerprinting for federal background checks can be done at <i>some</i> post offices.
-                    You will need to do this <i>after</i> requesting your National Identity History Summary,
-                    as you will need yoor order confirmation number to register to get fingerprinted at the post office.
-                    <br><br>
-                    *You can skip this step by getting a second fingerprint card while getting your fingerprints for your state
-                    background check. However, you will have to mail that second fingerprint card, which will cause the federal background check
-                    to take <i>much</i> longer.
-                </p>
-                <h4>
-                    Fingerprinting - State
-                </h4>
-                <p>
-                    You will need to find this on your own (sorry) as it varies be county 
-                    (but if you are in Wake county, you can get fingerprinted <a href="https://www.wake.gov/departments-government/city-county-bureau-identification-ccbi/fingerprinting-and-public-services" target="_blank" rel="noopener noreferrer">here</a>).
-                    You should get a fingerprint card from here that you will need to send with your Right to Review request.
-                    
-                </p>
-                <h4><a href="./files/BackgroundCheck/SBIRight-to-Review__FILLABLE-2021v3.pdf" target="_blank" rel="noopener noreferrer">
-                    Right to Review
-                </a></h4>
-                <p>
-                    This is your request for a state background check 
-                    (found <a href="https://ncsbi.gov/Services/Background-Checks/Personal-Review" target="_blank" rel="noopener noreferrer">here</a>). 
-                    You will need to mail this with with your fingerprint card and either a certified check or money order <i>after</i> you get your National Identity History Summary results back.
-                </p>
-                
-
-            </section>
-
-
-            <section id="CourtDocuments" style="display:none;">
-                <h2>
-                    Court Documents
-                </h2>
-                <p>
-                    Now that you have your background checks' results, you can actually legally change your name. 
-                    These are the documents that you will actually file with the court.
-                    You can find your courthouse <a href="https://www.nccourts.gov/locations" target="_blank" rel="noopener noreferrer">
-                        here</a> on the <a href="https://www.nccourts.gov/" target="_blank" rel="noopener noreferrer">
-                        NC Courts website</a>.
-                    This is also the site where all these forms can be found
-                    (<a href="https://www.nccourts.gov/documents/forms?contains=name%20change&field_form_type_target_id=All&field_language_target_id=All" target="_blank" rel="noopener noreferrer">here</a>).
-                </p>
-                <br>
-
-                <h4><a href="./files/CourtDocuments/sp606-NoticeOfIntentToChangeName.pdf" target="_blank" rel="noopener noreferrer">
-                    Notice of Intent to Change Name
-                </a></h4>
-                <p>
-                    You will need to post this at courthouse at least 10 days before you submit your name change.
-                </p>
-
-                <h4><a href="./files/CourtDocuments/sp607-AffidavitOfGoodCharacter.pdf" target="_blank" rel="noopener noreferrer">
-                    Affidavit of Good Character</a> (x2)</h4>
-                <p>
-                    You will need two people (preferably not blood relatives) from your country to fill this out,
-                    stating how they know you and how you are <i>of good character</i>.
-
-                    As you have not yet changed your name yet, they should use your deadname when talking about you for this form. 
-                </p>
-
-                <h4><a href="./files/CourtDocuments/sp604-ApplicationForAdultNameChange.pdf" target="_blank" rel="noopener noreferrer">
-                    Application For Adult Name Change
-                </a></h4>
-                <p>
-                    Self Explanatory, this is the actual application for a name change.
-                    You will need to submit this with:<ul>
-                        <li>You 10-day old Notice of Intent to Change Name</li>
-                        <li>2 Affidavit of Good Character</li>
-                        <li>The results of both of your background checks</li>
-                    </ul>
-                    You will also need to have:<ul>
-                        <li>A form of ID</li>
-                        <li>Your Birth Certificate</li>
-                        <li>A form of payment for the filing fee</li>
-                    </ul>
-                    If you don't feel comfortable mentioning your transness as your reason for changing your name (I didn't),
-                    you can say something to the effect of your "new" name being how people gernally refer to you
-                    and that you would like you legal documentation to match (which is true). From what I have read, as long as your are not 
-                    changing your name to commit fraud, they are pretty accepting of your resoning.
-                </p>
-                
-            </section>
-
-
-            <section id="IDDocuments" style="display:none">
-                <h2>
-                    ID Documents
-                </h2>
-                <p>
-                    Now that you have your court order, you need to go about updating all you ID documents.                 
-                </p>
-                <br>
-
-                <h4><a href="./files/IDDocuments/ss-5.pdf" target="_blank" rel="noopener noreferrer">
-                    Social Security Card</a></h4>
-                <p>
-                    This was one of the easier documents to update. You can find your
-                    local social security office <a href="https://secure.ssa.gov/ICON/main.jsp" target="_blank" rel="noopener noreferrer">here</a>. 
-                    You will need to bring your court order.
-                    You will need to do it a few days before updating your driver's license
-                    since the social security database is where the DMV gets their data from.
-                    You can also change your sex marker without any other documentation.
-                </p>
-
-                <h4><a href="https://travel.state.gov/content/travel/en/passports.html" target="_blank" rel="noopener noreferrer">
-                    US Passport</a></h4>
-                <p>
-                    You will need to send you court order to change your name. At the same time, you can update 
-                    your gender marker without any other documentation (as of March 2024).
-                </p>
-
-                <h4>
-                    Driver's license</h4>
-                <p>
-                    You will want to make an appointment ASAP <a href="https://skiptheline.ncdot.gov/Webapp/Appointment/Index/a7ade79b-996d-4971-8766-97feb75254de" target="_blank" rel="noopener noreferrer">
-                        here</a>. For the name change, you will need to bring your court order
-                        proving you name change. For your sex marker change, you need to bring an updated passport with the correct information on it
-                            (OR <a href="./files/IDDocuments/DL-300.pdf" target="_blank" rel="noopener noreferrer">this form</a> filled out, but the updated passport is much easier).
-                    </a>
-                </p>
-
-                <h4>Voter Registration</h4>
-                <p>
-                    You can do this while you are updating your driver's license.
-                </p>
-
-                <h4><a href="./files/IDDocuments/NCOVR-BirthModificationsApplicationFinal-07072022v6.pdf" target="_blank" rel="noopener noreferrer">
-                    Birth Certificate</a></h4>
-                <p>
-                    <b>WIP<br></b>
-                    You can update name and sex marker by mail with the above form, as well as with your updated passport with the correct information and your court order.
-                    Alternatively, you can visit them in person with your updated passport and court order 
-                    <a href="https://www.google.com/maps/place/225+N+McDowell+St,+Raleigh,+NC+27603/@35.7835389,-78.6467615,17z/data=!3m1!4b1!4m10!1m2!2m1!1sCooper+Memorial+Health+Building+225+N.+McDowell+St.+Raleigh,+NC+27603-1382!3m6!1s0x89ac5f6932db0ff7:0xf2b17d6fe9298809!8m2!3d35.7835346!4d-78.6418906!15sCkpDb29wZXIgTWVtb3JpYWwgSGVhbHRoIEJ1aWxkaW5nIDIyNSBOLiBNY0Rvd2VsbCBTdC4gUmFsZWlnaCwgTkMgMjc2MDMtMTM4MpIBEWNvbXBvdW5kX2J1aWxkaW5n4AEA!16s%2Fg%2F11b8v5knzg?entry=ttu" 
-                    target="_blank" rel="noopener noreferrer">here</a> if you are near Raleigh.
-                </p>
-                
-            </section>
-            
-        </section>
+        <section id="main-content" class="content"></section>
      
     </div>
     
-
+    
     <footer class="trans-border"\>
+
+   
 </body>
-<style>
 
-.trans-border{
-    background-color: rgb(27, 190, 255);
-    height: 5vh;
-    
-    border-style: solid;
-    border-color:rgb(255, 179, 227);
-    position:fixed;
-}
-header{
-    border-width: 0 0 5vh 0;
-    top:0;
-    width:100%;
-    height:100px;  
-}
-footer{
-    border-width: 5vh 0 0 0;
-    bottom:0;
-    width:100%;
-    height:100px;  
-}
-.sidebar{
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: rgb(230, 230, 230);
-    padding-top: 5vh;
-}
-body{
-    margin:0;
-}
-
-.main-div{
-    background-color: white;
-    height:80vh;
-    margin: 10vh 8px 10vh 0px;
-    display:grid;
-    grid-template-columns: 285px auto;
-    grid-template-rows: 100%;
-    column-gap: 8px;
-
-}
-.content{
-    overflow: auto;
-    overflow-y: auto;
-}
-
-.nav-item{
-    text-align: center;
-    border-style:solid;
-    border-color: rgb(209, 209, 209);
-    border-width: 1px 0px;
-}
-
-</style>
-<script>
-    var currentPage = 'Intro';
-    
-    function closePage(name){
-        document.getElementById(name).style.display = "none"
-    }
-    function openPage(name){
-        closePage(currentPage);
-        document.getElementById(name).style.display = "block";
-        currentPage=name;
-    }
-</script>
