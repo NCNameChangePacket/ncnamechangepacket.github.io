@@ -26,14 +26,16 @@ footer{
     background-color: rgb(230, 230, 230);
     padding-top: 5vh;
 }
+
 body{
     margin:0;
+    background-color:  rgb(27, 190, 255);
 }
 
 .main-div{
     background-color: white;
     height:80vh;
-    margin: 10vh 8px 10vh 0px;
+    margin: 10vh 0px 10vh 0px;
     display:grid;
     grid-template-columns: 285px auto;
     grid-template-rows: 100%;
@@ -43,6 +45,7 @@ body{
 .content{
     overflow: auto;
     overflow-y: auto;
+    margin-right: 8px;
 }
 
 .nav-item{
