@@ -1,46 +1,57 @@
 
+<!DOCTYPE html>
 <head>
     <title>NC Name Change Packet</title>
-    <link rel="icon" type="image/x-icon" href="./files/images/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    
 
     <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="js/buttons.js"></script>  
-    
+
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
-    <header class="trans-border"\>
-    <div class = "main-div">
-        <div class="sidebar">
-            <h1 style="text-align: center;">
-                    NC Name Change Packet
-                </h1>
-            <nav>
-                
-                <div id="intro-button" class="nav-item" onclick="openPage('intro')">
-                    <h5>Intro</h5>
-                </div>
-                <div id="bg-checks-button" class="nav-item">
-                    <h5>Background Checks</h5>
-                </div>
-                <div id="court-docs-button" class="nav-item">
-                    <h5>Court Documents</h5>
-                </div>
-                <div id="id-docs-button" class="nav-item">
-                    <h5>ID Documents</h5>
-                </div>
-            </nav>
+    <div id="wrapper">
+        <header class="trans-border"></header>
+
+        <div class = "main-div">
+            <div id="sidebar" class="sidebar">
+                <h1 style="text-align: center;">
+                        NC Name Change Packet
+                    </h1>
+                <nav>
+                    
+                    <div id="intro-button" class="sidebar-item">
+                        <img src="images/user-solid.svg" alt="user icon" class="sidebar-item-icon"\><h4 class="sidebar-item-text"> Intro</h4>
+                    </div>
+                    <div id="bg-checks-button" class="sidebar-item">
+                        <img src="images/fingerprint-solid.svg" alt="fingerprint icon" class="sidebar-item-icon"\><h4 class="sidebar-item-text"> Background Checks</h4>
+                    </div>
+                    <div id="court-docs-button" class="sidebar-item">
+                        <img src="images/gavel-solid.svg" alt="gavel icon" class="sidebar-item-icon"\><h4 class="sidebar-item-text"> Court Documents</h4>
+                    </div>
+                    <div id="id-docs-button" class="sidebar-item">
+                        <img src="images/id-card-solid.svg" alt="id card icon" class="sidebar-item-icon"\><h4 class="sidebar-item-text"> ID Documents</h4>
+                    </div>
+                </nav>
+            </div>
+            
+            
+            <section id="main-content" class="content"></section>
+            <div id="sidebar-tab" class="sidebar-tab">
+                <img src="images/angle-right-solid.svg" alt="arrow right icon" class="sidebar-tab-icon"\>
+                <div id="sidebar-tab" class="sidebar-tab-shadow"></div>
+            </div>
+
+            
+            
         </div>
         
         
-        <section id="main-content" class="content"></section>
-     
+        <footer class="trans-border"></footer>
     </div>
-    
-    
-    <footer class="trans-border"\>
-
    
 </body>
 
