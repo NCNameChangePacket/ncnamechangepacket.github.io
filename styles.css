@@ -1,6 +1,6 @@
 .trans-border{
     background-color: rgb(27, 190, 255);
-    height: 5vh;
+    height: 5dvh;
     
     border-style: solid;
     border-color:rgb(255, 179, 227);
@@ -10,12 +10,12 @@
     z-index: 10;
 }
 header{
-    border-width: 0 0 5vh 0;
+    border-width: 0 0 5dvh 0;
     top:0;
      
 }
 footer{
-    border-width: 5vh 0 0 0;
+    border-width: 5dvh 0 0 0;
     bottom:0;
       
 }
@@ -33,7 +33,7 @@ footer{
     flex-direction: column;
     align-items: stretch;
     background-color: rgb(230, 230, 230);
-    padding-top: 5vh;
+    padding-top: 5dvh;
     overflow-y: auto;
     z-index:5;
     box-shadow: rgb(85 85 85 / 37%) 5px 5px 4px; 
@@ -66,7 +66,7 @@ footer{
     position: absolute;
     height: 35px;
     width: 60px;
-    bottom: 11vh;
+    bottom: 11dvh;
     background-color: rgb(230, 230, 230);
     left: -2%;
     border-radius: 0 10px 10px 0;
@@ -101,9 +101,15 @@ body{
     
 }
 
-#wrapper{
+#body-wrapper{
     position:relative;
     overflow: hidden;
+}
+
+#content-wrapper{
+    margin: 0px 8px;
+    height:98.7%;
+    padding-top:1dvh;
 }
 
 
@@ -113,8 +119,8 @@ body{
     
 
     background-color: white;
-    height:80.2vh;
-    margin: 9vh 0px 10vh 0px;
+    height:80.2dvh;
+    margin: 9dvh 0px 10dvh 0px;
     grid-template-columns: 285px auto;
     grid-template-rows: 100%;
 
@@ -122,9 +128,8 @@ body{
 .content{
     overflow: auto;
     overflow-y: auto;
-    margin: 0px 8px;
-    height:99%;
-    padding-top:1vh;
+    height:100%;
+    
     
 }
 
@@ -137,6 +142,7 @@ body{
         grid-column: auto;
         position: relative;
         left:0;
+        box-shadow: none;
         
 
     }
