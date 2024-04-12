@@ -26,7 +26,7 @@ footer{
     width:100%;
     position: absolute;
     grid-column: auto / span 2;
-    left:-101%;
+    left:-102%;
     transition: transform 1s; 
     height: 94%;
     display:flex;
@@ -68,7 +68,7 @@ footer{
     width: 60px;
     bottom: 11dvh;
     background-color: rgb(230, 230, 230);
-    left: -2%;
+    left: -3%;
     border-radius: 0 10px 10px 0;
     z-index:6;
     box-shadow: rgb(85 85 85 / 37%) 5px 5px 4px; 
@@ -86,7 +86,7 @@ footer{
 
 .sidebar-open{
         
-    transform: translateX(101vw);
+    transform: translateX(102dvw);
 
 }
 
