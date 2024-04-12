@@ -90,6 +90,18 @@ footer{
 
 }
 
+.download-icon{
+    
+    height:10em;
+}
+
+.download-div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 body{
     margin:0;
